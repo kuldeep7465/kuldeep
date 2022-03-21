@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "kuldeep";
+}
+
+    @model kuldeep.db_content.my_table
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+
+        @Html.TextBoxFor(n =>n.name, new { @class = "form-control",@Required="Required" })
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">email</label>
+        @Html.TextBoxFor(n => n.email, new { @class = "form-control", @Required = "Required" })
+    </div>
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
